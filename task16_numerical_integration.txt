@@ -1,0 +1,20 @@
+=== A. MAIN CASE: distance = integral of v(t) dt, 0..10 s ===
+exact distance        = 68.326236 m
+trapezoidal (11 pts)  = 68.089038 m (error 2.37e-01)
+Simpson     (11 pts)  = 68.324825 m (error 1.41e-03)
+
+=== C. PARAMETER CHANGE: number of sample points ===
+N =   3 | trapezoid error 5.727e+00 | Simpson error 6.980e-01
+N =   5 | trapezoid error 1.471e+00 | Simpson error 5.216e-02
+N =  11 | trapezoid error 2.372e-01 | Simpson error 1.410e-03
+N =  21 | trapezoid error 5.937e-02 | Simpson error 8.884e-05
+N =  41 | trapezoid error 1.485e-02 | Simpson error 5.564e-06
+N = 101 | trapezoid error 2.375e-03 | Simpson error 1.425e-07
+
+=== E. NEW CASE: energy consumption from hourly power readings ===
+reference energy (20001 pts) = 22.2788 kWh
+trapezoid (hourly)           = 22.2780 kWh
+Simpson   (hourly)           = 22.2871 kWh
+Simpson   (every 3 hours)    = 20.5627 kWh
+daily cost at KES 25/kWh    = KES 557.18
+peak demand 2.50 kW at hour 19

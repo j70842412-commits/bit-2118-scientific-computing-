@@ -1,0 +1,14 @@
+=== A. MAIN CASE: logistic growth, r = 0.4/day, K = 1000, P0 = 50 ===
+Euler h = 1: P(30) = 999.978 | exact 999.883 | error 0.095
+first five Euler values: [ 50.     69.     94.696 128.987 173.927]
+
+=== C. PARAMETER CHANGE: step size h ===
+h = 5    | P(30) =  1088.382 | max error 348.891
+h = 1    | P(30) =   999.978 | max error 81.716
+h = 0.1  | P(30) =   999.897 | max error 8.295
+
+=== E. NEW CASE: capacitor charging, tau = 1 s, Vs = 5 V ===
+h = 0.1 | V(6.0 s) =    4.9910 V | exact 4.9876 V | max error 0.0960 | stable
+h = 0.5 | V(6.0 s) =    4.9988 V | exact 4.9876 V | max error 0.5894 | stable
+h = 1   | V(6.0 s) =    5.0000 V | exact 4.9876 V | max error 1.8394 | stable
+h = 2.5 | V(5.0 s) =   -6.2500 V | exact 4.9663 V | max error 11.2163 | UNSTABLE (h > 2 tau)

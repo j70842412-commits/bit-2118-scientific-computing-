@@ -1,0 +1,15 @@
+=== A. MAIN CASE: cloud allocation, demand >= 60 capacity units ===
+success: True | iterations: 13
+small servers x = 9.444 | large servers y = 20.000
+total capacity = 89.444 | minimum cost = 8.1443 per hour
+
+=== C. PARAMETER CHANGE: demand 60 -> 120 ===
+small servers x = 40.000 | large servers y = 20.000
+total capacity = 120.000 | minimum cost = 8.5333 per hour
+the large-server limit of 20 is active, so extra demand is met by small servers
+
+=== E. NEW CASE: training a linear model (gradient descent) ===
+gradient descent (lr 0.01): w = 2.5527, b = 3.9900, final MSE 3.6912
+scipy minimize (BFGS)     : w = 2.4915, b = 4.3850, MSE 3.6456
+np.polyfit (closed form)  : w = 2.4915, b = 4.3850
+learning rate 0.07 is too large: loss after 60 iterations = 6.662e+64

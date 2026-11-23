@@ -1,0 +1,26 @@
+=== A. MAIN CASE: position data sampled every h = 0.5 s ===
+t (s)      : [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5. ]
+position m : [ 0.     2.125  3.     3.375  4.     5.625  9.    14.875 24.    37.125
+ 55.   ]
+velocity   : [ 4.25  3.    1.25  1.    2.25  5.    9.25 15.   22.25 31.   35.75]
+true vel.  : [ 6.    2.75  1.    0.75  2.    4.75  9.   14.75 22.   30.75 41.  ]
+accel      : [-2.5 -3.  -2.   1.   4.   7.  10.  13.  16.  13.5  9.5]
+max interior error: velocity 0.2500 m/s, acceleration 0.0000 m/s^2
+
+forward vs central difference for d/dx sin(x) at x = 1 (true cos 1 = 0.540302)
+h = 0.5    forward error 2.283e-01 | central error 2.223e-02
+h = 0.1    forward error 4.294e-02 | central error 9.001e-04
+h = 0.01   forward error 4.216e-03 | central error 9.005e-06
+h = 0.001  forward error 4.208e-04 | central error 9.005e-08
+
+=== C. PARAMETER CHANGE: step size h ===
+h = 0.5 | velocity error 0.2500 | acceleration error 0.0000
+h = 0.1 | velocity error 0.0100 | acceleration error 0.0000
+
+=== E. NEW CASE: flow rate from tank level readings ===
+net flow estimate (m3/min): [-0.1683 -0.1594 -0.1426 -0.1276 -0.1142 -0.1022 -0.0915 -0.0818 -0.0732
+ -0.0655 -0.0586 -0.0525 -0.0496]
+true flow         (m3/min): [-0.1778 -0.1591 -0.1424 -0.1274 -0.114  -0.102  -0.0913 -0.0817 -0.0731
+ -0.0654 -0.0585 -0.0524 -0.0469]
+max interior error: 0.00033 m3/min
+with 5 mm sensor noise, max error becomes 0.01446 m3/min

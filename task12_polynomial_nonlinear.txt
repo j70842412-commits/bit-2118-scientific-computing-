@@ -1,0 +1,21 @@
+=== A. MAIN CASE ===
+roots of x^3 - 6x^2 + 11x - 6: [1. 2. 3.]
+projectile (v0 = 20 m/s, h0 = 1.5 m) lands after 4.1553 s
+circle x^2+y^2 = 25 and parabola y = x^2 - 5:
+  guess (3, 4)     -> (x, y) = (3.00000, 4.00000), success=True
+  guess (-3, 4)    -> (x, y) = (-3.00000, 4.00000), success=True
+  guess (0.5, -4)  -> (x, y) = (0.00000, -5.00000), success=True
+
+=== C. PARAMETER CHANGE ===
+v0 = 20 m/s -> flight time 4.1553 s
+v0 = 30 m/s -> flight time 6.1720 s
+start (2.5, 3.5) converges to (3.0000, 4.0000)
+start (-2.5, 3.5) converges to (-3.0000, 4.0000)
+start (0.1, -4.9) converges to (0.0000, -5.0000)
+start (4, 4)     converges to (3.0000, 4.0000)
+
+=== E. NEW CASE: chemical equilibrium, A + B <-> C ===
+Kc =  4.0 -> roots [1.6404 0.6096] | feasible x = 0.60961 (root_scalar 0.60961)
+          [C] = 0.6096, [A] = [B] = 0.3904 mol/L
+Kc = 10.0 -> roots [1.3702 0.7298] | feasible x = 0.72984 (root_scalar 0.72984)
+          [C] = 0.7298, [A] = [B] = 0.2702 mol/L

@@ -1,0 +1,17 @@
+=== A. MAIN CASE: f(x) = sin(x) + 0.5*x**2 ===
+N =     1000 | loop 0.000047 s | numpy 0.000008 s | speed-up x6
+N =    10000 | loop 0.000469 s | numpy 0.000074 s | speed-up x6
+N =   100000 | loop 0.006960 s | numpy 0.002753 s | speed-up x3
+N =  1000000 | loop 0.069764 s | numpy 0.013843 s | speed-up x5
+
+=== C. PARAMETER CHANGE: effect of N on speed-up ===
+N =     1000 -> speed-up x5.8
+N =    10000 -> speed-up x6.3
+N =   100000 -> speed-up x2.5
+N =  1000000 -> speed-up x5.0
+
+=== E. NEW CASE: KES -> USD and VAT on 1,000,000 transactions ===
+total value  : KES 1809.53 million
+total in USD : USD 14027.37 thousand
+total VAT    : KES 249.59 million
+loop 0.1309 s | numpy 0.0024 s | speed-up x55

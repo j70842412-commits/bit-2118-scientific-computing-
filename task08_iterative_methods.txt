@@ -1,0 +1,16 @@
+=== A. MAIN CASE: heat conduction in a rod (n = 10) ===
+exact (direct solve): [90.9091 81.8182 72.7273 63.6364 54.5455 45.4545 36.3636 27.2727 18.1818
+  9.0909]
+Jacobi       : 403 iterations, max error 3.70e-06
+Gauss-Seidel : 196 iterations, max error 4.94e-06
+
+=== C. PARAMETER CHANGE: system size n ===
+n = 10 | Jacobi   403 iterations | Gauss-Seidel   196 iterations
+n = 20 | Jacobi  1397 iterations | Gauss-Seidel   680 iterations
+n = 40 | Jacobi  4999 iterations | Gauss-Seidel  2432 iterations
+
+=== E. NEW CASE: node voltages in an electrical network ===
+strictly diagonally dominant: True
+direct solution V (V): [3.125 1.25  1.25  1.875]
+Gauss-Seidel V (V)   : [3.125 1.25  1.25  1.875] in 17 iterations
+Jacobi V (V)         : [3.125 1.25  1.25  1.875] in 34 iterations

@@ -1,0 +1,15 @@
+=== A. MAIN CASE: break-even units, price = KES 50 ===
+bisection   : x = 68.217894 in 27 iterations
+fixed point : x = 68.217894 in 7 iterations
+exact (quadratic formula): 68.217894
+profit at root = 0.000001
+
+=== C. PARAMETER CHANGE: price 50 -> 45 ===
+bisection   : x = 82.738247 in 27 iterations
+fixed point : x = 82.738247 in 8 iterations
+break-even rises by 14.52 units
+
+=== E. NEW CASE: time for tea to cool to 45 C ===
+bisection   : t = 14.73319 min in 25 iterations
+fixed point : t = 14.73319 min in 12 iterations
+exact       : t = 14.73319 min

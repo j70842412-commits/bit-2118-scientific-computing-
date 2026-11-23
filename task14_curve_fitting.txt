@@ -1,0 +1,20 @@
+=== A. MAIN CASE: logistic growth curve, noise sd = 20 ===
+fitted K  = 996.91 +/- 13.73   (true 1000)
+fitted r  = 0.5035 +/- 0.0252 (true 0.5)
+fitted t0 = 9.979 +/- 0.121  (true 10)
+R^2 logistic = 0.99632
+R^2 cubic polynomial = 0.99386
+prediction at t = 25: logistic 996.4 | cubic polynomial 192.2
+
+=== C. PARAMETER CHANGE: noise sd 20 -> 100 ===
+fitted K  = 981.86 +/- 65.91
+fitted r  = 0.5226 +/- 0.1332
+fitted t0 = 9.861 +/- 0.590
+R^2 = 0.91850
+uncertainty in K grew by a factor of 4.8
+
+=== E. NEW CASE: demand forecast, 12 months of simulated data ===
+exponential fit: a = 197.35, b = 0.0615 (growth 6.34 % per month)
+linear fit     : slope 18.28, intercept 182.19
+R^2 exponential = 0.9941 | R^2 linear = 0.9821
+forecast month 15: exponential 496.3 | linear 456.3 (KES million)

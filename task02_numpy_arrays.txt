@@ -1,0 +1,20 @@
+=== A. MAIN CASE: IoT temperature sensor ===
+temperatures (C)  : [20. 22. 24. 26.]
+squares x**2      : [400. 484. 576. 676.]
+mean (np.mean)    : 23.0
+24h mean/min/max  : 22.00 / 18.00 / 26.00 C
+first 3 readings F: [66.51 65.36 64.65]
+hours above 25.5 C: [14 15 16]
+
+=== C. PARAMETER CHANGE: faulty spike of 85 C at hour 12 ===
+mean   before -> after : 22.00 -> 24.51
+median before -> after : 22.00 -> 22.00
+std    before -> after : 2.83 -> 12.91
+mean after filtering   : 21.88  (23 valid readings)
+
+=== E. NEW CASE: soil moisture and irrigation ===
+moisture (%)      : [32. 28. 35. 18. 22. 30.]
+plots to irrigate : [2 4 5]
+water needed (L)  : [   0.  800.    0. 6000. 3600.    0.]
+total water (L)   : 10400
+farm mean moisture: 27.50 %  (area weighted: 28.32 %)

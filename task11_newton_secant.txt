@@ -1,0 +1,16 @@
+=== A. MAIN CASE: diode voltage, Vs = 5 V, R = 1 kOhm ===
+Newton-Raphson: V = 0.57414734 V in 6 iterations
+Secant        : V = 0.57414734 V in 11 iterations
+diode current   I = 4.4259 mA
+
+=== C. PARAMETER CHANGE: Vs = 9 V, R = 470 ohm ===
+Newton-Raphson: V = 0.61019715 V in 5 iterations
+Secant        : V = 0.61019715 V in 9 iterations
+diode current   I = 17.8506 mA
+a larger supply raised the diode voltage by only 0.0360 V
+
+=== E. NEW CASE: bond yield to maturity (finance) ===
+Newton-Raphson: yield = 12.918446 % in 5 iterations
+Secant        : yield = 12.918446 % in 6 iterations
+check: price at that yield = 95.000000
+coupon rate is 12 % but price is below face, so yield (12.92 %) > 12 %

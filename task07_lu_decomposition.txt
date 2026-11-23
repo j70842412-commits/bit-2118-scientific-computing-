@@ -1,0 +1,31 @@
+=== A. MAIN CASE ===
+L =
+ [[1.     0.     0.    ]
+ [0.25   1.     0.    ]
+ [0.5    0.6667 1.    ]]
+U =
+ [[ 8.      7.      9.    ]
+ [ 0.     -0.75   -1.25  ]
+ [ 0.      0.     -0.6667]]
+max |P L U - A| = 0.00e+00
+solution of A x = b : [1. 1. 1.]
+np.linalg.solve     : [1. 1. 1.]
+
+n = 300, increasing number of right-hand sides k:
+k =   1 | repeated solve 0.0013 s | LU once 0.0036 s | max diff 0.0e+00
+k =   5 | repeated solve 0.0049 s | LU once 0.0014 s | max diff 0.0e+00
+k =  20 | repeated solve 0.0190 s | LU once 0.0020 s | max diff 0.0e+00
+k =  50 | repeated solve 0.0475 s | LU once 0.0032 s | max diff 0.0e+00
+k = 100 | repeated solve 0.0988 s | LU once 0.0052 s | max diff 0.0e+00
+k = 200 | repeated solve 0.2090 s | LU once 0.0082 s | max diff 2.1e-22
+
+=== C. PARAMETER CHANGE: matrix size n ===
+n = 100 | repeated solve 0.0066 s | LU once 0.0016 s | ratio x4.1
+n = 200 | repeated solve 0.0338 s | LU once 0.0027 s | ratio x12.3
+n = 400 | repeated solve 0.2015 s | LU once 0.0069 s | ratio x29.4
+
+=== E. NEW CASE: heat in a 1 m rod with three heat-source cases ===
+uniform 1e4 W/m3           max temperature rise = 25.00 C
+uniform 2e4 W/m3           max temperature rise = 50.00 C
+localised centre source    max temperature rise = 31.46 C
+check vs analytic (uniform 1e4): max error = 1.78e-13 C

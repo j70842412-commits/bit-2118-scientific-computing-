@@ -1,0 +1,27 @@
+=== A. MAIN CASE ===
+0.1 + 0.2             = 0.30000000000000004
+0.1 + 0.2 == 0.3     : False
+abs error            : 5.551e-17
+np.isclose(0.1+0.2, 0.3): True
+machine epsilon float64: 2.220e-16
+machine epsilon float32: 1.192e-07
+
+add 0.1 one million times:
+  naive loop sum     = 100000.0000013329 (error 1.333e-06)
+  math.fsum          = 100000.0000000000
+
+(1-cos x)/x^2 at x = 1e-8:
+  naive formula      = 0.0  (true value 0.5)
+  stable formula     = 0.5
+
+=== C. PARAMETER CHANGE: float64 -> float32 ===
+float64 sum of 1e6 x 0.1 = 100000.000001 (error 1.333e-06)
+float32 sum of 1e6 x 0.1 = 100958.343750 (error 9.583e+02)
+
+=== E. NEW CASE: 1,000,000 fees of KES 0.10 in a bank ledger ===
+float64 ledger total : 100000.00000133
+float32 ledger total : 100958.34375000
+Decimal ledger total : 100000.00  (exact)
+float64 error in cents: 0.000133
+float32 error in KES  : 958.3438
+rounded to 2 dp float64: 100000.00 | Decimal: 100000.00
